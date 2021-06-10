@@ -7,115 +7,14 @@
     <title>BEM practice</title>
     <link rel="stylesheet" href="style.css" />
   </head>
-
-  <body>
-    <header class="header">
-      <button class="button button--header">Enter!</button>
+  <body class="page">
+    <header class="banner page__header">
+      <h1 class="banner__title banner__title--large">Slogan duży</h1>
+      <h2 class="banner__title banner__title--medium">Slogan mniejszy</h2>
+      <button class="button">Click!</button>
     </header>
-
-    <main class="main">
-      <section class="main-header">
-        <div class="main-header__logo">LOGO</div>
-        <nav class="main-header__navigation"></nav>
-      </section>
-
-      <aside class="searchbar">
-        <label for="searchbar__input">
-          <input type="text" id="searchbar__input" class="searchbar__input" />
-          <button class="searchbar__button">Search</button>
-        </label>
-      </aside>
-
-      <section class="articles">
-        <article class="article">
-          <header class="article__header">
-            <h2 class="article__header-title">Article Title #1</h2>
-            <p>
-              Marysia Bang
-              <time pubdate datetime="2021-06-10T9:10">2021.06.10 (czwartek)</time>
-            </p>
-          </header>
-          <section class="article__content">
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus corporis assumenda
-              quod ducimus debitis at ad totam iure delectus rerum! Lorem ipsum dolor sit amet
-              consectetur adipisicing elit. Sapiente ut tempora veniam id quasi eos doloribus, quam
-              ea placeat blanditiis.
-            </p>
-            <h3>Subtitle</h3>
-            <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae, ducimus corporis
-              beatae nihil esse assumenda odio unde pariatur veniam in, consequatur vel accusamus ut
-              quaerat numquam minima voluptatibus cumque? Dolore adipisci quam incidunt, mollitia
-              expedita voluptatibus facilis, illum quas tenetur, quia veniam ut laboriosam. Qui
-              laborum expedita officia perferendis perspiciatis.
-            </p>
-          </section>
-          <footer class="article__footer">
-            <button class="article__article-button">Read more...</button>
-          </footer>
-        </article>
-        <article class="article">
-          <header class="article__header">
-            <h2 class="article__header-title">Article Title #2</h2>
-            <p>
-              Marysia Bang
-              <time pubdate datetime="2021-06-04T9:10">2021.06.04 (piątek)</time>
-            </p>
-          </header>
-          <section class="article__content">
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus corporis assumenda
-              quod ducimus debitis at ad totam iure delectus rerum! Lorem ipsum dolor sit amet
-              consectetur adipisicing elit. Sapiente ut tempora veniam id quasi eos doloribus, quam
-              ea placeat blanditiis.
-            </p>
-            <h3>Subtitle</h3>
-            <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae, ducimus corporis
-              beatae nihil esse assumenda odio unde pariatur veniam in, consequatur vel accusamus ut
-              quaerat numquam minima voluptatibus cumque? Dolore adipisci quam incidunt, mollitia
-              expedita voluptatibus facilis, illum quas tenetur, quia veniam ut laboriosam. Qui
-              laborum expedita officia perferendis perspiciatis.
-            </p>
-          </section>
-          <footer class="article__footer">
-            <button class="article__article-button">Read more...</button>
-          </footer>
-        </article>
-        <article class="article">
-          <header class="article__header">
-            <h2 class="article__header-title">Article Title #3</h2>
-            <p>
-              Marysia Bang
-              <time pubdate datetime="2021-05-29T19:11">2021.05.29 (sobota)</time>
-            </p>
-          </header>
-          <section class="article__content">
-            <p>
-              Corporis assumenda quod ducimus debitis at ad totam iure delectus rerum! Lorem ipsum
-              dolor sit amet consectetur adipisicing elit. Sapiente ut tempora veniam id quasi eos
-              doloribus, quam ea placeat blanditiis.
-            </p>
-            <h3>Subtitle</h3>
-            <p>
-              Sit amet consectetur adipisicing elit. Vitae, ducimus corporis beatae nihil esse
-              assumenda odio unde pariatur veniam in, consequatur vel accusamus ut quaerat numquam
-              minima voluptatibus cumque? Dolore adipisci quam incidunt, mollitia expedita
-              voluptatibus facilis, illum quas tenetur, quia veniam ut laboriosam. Qui laborum
-              expedita officia perferendis perspiciatis.
-            </p>
-          </section>
-          <footer class="article__footer">
-            <button class="article__article-button">Read more...</button>
-          </footer>
-        </article>
-      </section>
-    </main>
-
-    <footer class="footer">
-      <p>copyrights</p>
-      <address></address>
-    </footer>
+    <nav class="menu"></nav>
+    <section class="articles"></section>
+    <footer class="footer"></footer>
   </body>
 </html>
