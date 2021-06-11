@@ -9,12 +9,86 @@
   </head>
   <body class="page">
     <header class="banner page__header">
+      <img src="" alt="" class="banner__image" />
       <h1 class="banner__title banner__title--large">Slogan duży</h1>
       <h2 class="banner__title banner__title--medium">Slogan mniejszy</h2>
-      <button class="button">Click!</button>
+      <button class="button banner__button button--large">Click!</button>
     </header>
-    <nav class="menu"></nav>
-    <section class="articles"></section>
-    <footer class="footer"></footer>
+    <nav class="menu page__nav">
+      <div class="logo">
+        <img src="" alt="" class="logo__image menu__logo" />
+        <span class="logo__company-name"></span>
+      </div>
+      <ul class="menu__list">
+        <li class="menu__item menu__item--is-open"><a href="" class="menu__link">link</a></li>
+        <li class="menu__item"><a href="" class="menu__link">link</a></li>
+        <li class="menu__item"><a href="" class="menu__link">link</a></li>
+        <li class="menu__item"><a href="" class="menu__link">link</a></li>
+      </ul>
+    </nav>
+    <section class="articles page__articles">
+      <form class="search">
+        <input type="text" class="search__input" />
+        <button class="button search__button button--italic" type="submit"></button>
+      </form>
+      <article class="article">
+        <h1 class="article__title">Tytuł artykłu #1</h1>
+        <div class="article__info">
+          <span class="article__publication-date">2021.06.11</span>
+          <span class="article__publication-author">JKOSZAJA</span>
+        </div>
+        <p class="article__text">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem nemo temporibus voluptas.
+          Ea est hic voluptas blanditiis pariatur, dignissimos aspernatur!
+        </p>
+        <h2 class="article__subtitle">subtitle</h2>
+        <p class="article__text">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem nemo temporibus voluptas.
+          Ea est hic voluptas blanditiis pariatur, dignissimos aspernatur!
+        </p>
+        <button class="button article__button">Read more...</button>
+      </article>
+
+      <article class="article">
+        <h1 class="article__title">Tytuł artykłu #2</h1>
+        <div class="article__info">
+          <span class="article__publication-date">2021.06.11</span>
+          <span class="article__publication-author">JKOSZAJA</span>
+        </div>
+        <p class="article__text">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem nemo temporibus voluptas.
+          Ea est hic voluptas blanditiis pariatur, dignissimos aspernatur!
+        </p>
+        <h2 class="article__subtitle">subtitle</h2>
+        <p class="article__text">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem nemo temporibus voluptas.
+          Ea est hic voluptas blanditiis pariatur, dignissimos aspernatur!
+        </p>
+        <button class="button article__button">Read more...</button>
+      </article>
+
+      <article class="article">
+        <h1 class="article__title">Tytuł artykłu #3</h1>
+        <div class="article__info">
+          <span class="article__publication-date">2021.06.11</span>
+          <span class="article__publication-author">JKOSZAJA</span>
+        </div>
+        <p class="article__text">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem nemo temporibus voluptas.
+          Ea est hic voluptas blanditiis pariatur, dignissimos aspernatur!
+        </p>
+        <h2 class="article__subtitle">subtitle</h2>
+        <p class="article__text">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem nemo temporibus voluptas.
+          Ea est hic voluptas blanditiis pariatur, dignissimos aspernatur!
+        </p>
+        <button class="button article__button">Read more...</button>
+      </article>
+    </section>
+
+    <footer class="footer page__footer">
+      <p class="footer__copyright-info">R</p>
+      <address class="footer__address-info">Adress</address>
+    </footer>
   </body>
 </html>
