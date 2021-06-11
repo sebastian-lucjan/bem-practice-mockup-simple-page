@@ -1,9 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-body {
-  background-color: #333;
+.page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
+.page__container {
+  margin-top: 2vh;
+  border-radius: 20px;
+  max-width: 1080px;
+  border: 1px lightgray solid;
+  overflow: hidden;
+  box-shadow: 2px 2px 20px rgba(128, 128, 128, 0.75);
+}
+
+.banner {
+  position: relative;
+  height: 20vh;
+  overflow: hidden;
+}
+
+.banner__image {
+  position: absolute;
+  max-width: 100%;
+  transform: translateY(-25vh);
+  object-fit: cover;
+  z-index: -1;
+}
+.banner__titles-container {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  left: 0;
+  top: 0;
+  align-items: flex-end;
+  padding: 5%;
+}
+
+.banner__title {
+  color: black;
+  font-family: 'Lato', Arial, sans-serif;
+  font-size: 1.4rem;
+}
+
+.banner__title--large {
+  background-color: white;
+  font-size: 2.4rem;
+  font-weight: 800;
+}
+
+.banner__title--small {
+  background-color: lightgreen;
+  font-size: 1.2rem;
+}
+
+.button {
+  box-shadow: inset 0px 1px 0px 0px #ffffff;
+  background: linear-gradient(to bottom, #f9f9f9 5%, #e9e9e9 100%);
+  background-color: #f9f9f9;
+  border-radius: 6px;
+  border: 1px solid #dcdcdc;
+  display: inline-block;
+  cursor: pointer;
+  color: #222;
+  font-family: 'Lato', Arial, sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 6px 24px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #ffffff;
+}
+
+.button:hover {
+  background: linear-gradient(to bottom, #e9e9e9 5%, #f9f9f9 100%);
+  background-color: #e9e9e9;
+}
+
+.button:active {
+  position: relative;
+  top: 1px;
+}
+
+/* <body class="page">
+
+    <header class="banner page__header">
+      <img src="" alt="" class="banner__image" />
+      <h1 class="banner__title banner__title--large">Slogan duży</h1>
+      <h2 class="banner__title banner__title--medium">Slogan mniejszy</h2>
+      <button class="button banner__button button--large">Click!</button>
+    </header>
+
+    <nav class="menu page__nav">
+      <div class="logo">
+        <img src="" alt="" class="logo__image menu__logo" />
+        <span class="logo__company-name"></span>
+      </div>
+      <ul class="menu__list">
+        <li class="menu__item menu__item--is-open"><a href="" class="menu__link">link</a></li>
+        <li class="menu__item"><a href="" class="menu__link">link</a></li>
+        <li class="menu__item"><a href="" class="menu__link">link</a></li>
+        <li class="menu__item"><a href="" class="menu__link">link</a></li>
+      </ul>
+    </nav>
+
+    <section class="articles page__articles">
+      <form class="search">
+        <input type="text" class="search__input" />
+        <button class="button search__button button--italic" type="submit">Search</button>
+      </form>
+
+      <article class="article">
+        <h1 class="article__title">Tytuł artykłu #1</h1>
+        <div class="article__info">
+          <span class="article__publication-date">2021.06.11</span>
+          <span class="article__publication-author">JKOSZAJA</span>
+        </div>
+        <p class="article__text">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem nemo temporibus voluptas.
+          Ea est hic voluptas blanditiis pariatur, dignissimos aspernatur!
+        </p>
+        <h2 class="article__subtitle">subtitle</h2>
+        <p class="article__text">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem nemo temporibus voluptas.
+          Ea est hic voluptas blanditiis pariatur, dignissimos aspernatur!
+        </p>
+        <button class="button article__button">Read more...</button>
+      </article>
+
+      <article class="article">
+        <h1 class="article__title">Tytuł artykłu #2</h1>
+        <div class="article__info">
+          <span class="article__publication-date">2021.06.11</span>
+          <span class="article__publication-author">JKOSZAJA</span>
+        </div>
+        <p class="article__text">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem nemo temporibus voluptas.
+          Ea est hic voluptas blanditiis pariatur, dignissimos aspernatur!
+        </p>
+        <h2 class="article__subtitle">subtitle</h2>
+        <p class="article__text">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem nemo temporibus voluptas.
+          Ea est hic voluptas blanditiis pariatur, dignissimos aspernatur!
+        </p>
+        <button class="button article__button">Read more...</button>
+      </article>
+
+      <article class="article">
+        <h1 class="article__title">Tytuł artykłu #3</h1>
+        <div class="article__info">
+          <span class="article__publication-date">2021.06.11</span>
+          <span class="article__publication-author">JKOSZAJA</span>
+        </div>
+        <p class="article__text">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem nemo temporibus voluptas.
+          Ea est hic voluptas blanditiis pariatur, dignissimos aspernatur!
+        </p>
+        <h2 class="article__subtitle">subtitle</h2>
+        <p class="article__text">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem nemo temporibus voluptas.
+          Ea est hic voluptas blanditiis pariatur, dignissimos aspernatur!
+        </p>
+        <button class="button article__button">Read more...</button>
+      </article>
+    </section>
+
+    <footer class="footer page__footer">
+      <p class="footer__copyright-info">R</p>
+      <address class="footer__address-info">Adress</address>
+    </footer>
+  </body> */
